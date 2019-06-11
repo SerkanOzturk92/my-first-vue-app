@@ -18,6 +18,6 @@ export default new Router({
       name: 'JobDetail',
       component: JobDetail,
     },
-    { path: '*', redirect: '/job-list' }
+    { path: '*', redirect: '/job-list' },
   ],
 });

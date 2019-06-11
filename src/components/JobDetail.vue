@@ -16,38 +16,35 @@
 
 </template>
 <script>
-  import {jobDetailsDummyData} from '../utils/JobDetailsDummyData';
+import { jobDetailsDummyData } from '../utils/JobDetailsDummyData';
 
-  export default {
-    name: 'JobDetail',
-    data() {
-      return {
-        jobList: jobDetailsDummyData,
-        jobDetail: undefined,
-      };
+export default {
+  name: 'JobDetail',
+  data() {
+    return {
+      jobList: jobDetailsDummyData,
+      jobDetail: undefined,
+    };
+  },
+  created() {
+    const errorObj = {
+      jobId: '',
+      positionName: 'Detay bulunamadı !!',
+      companyName: '',
+      durationDay: 0,
+      cityName: '',
+      description: '',
+    };
+    const detail = this.jobList.find(job => (this.$route.params.id === job.jobId));
+    this.jobDetail = detail || errorObj;
+  },
+  methods: {
+    apply() {
+      alert('Applied!!!');
+      this.$router.push('/job-list');
     },
-    created() {
-      const errorObj = {
-        jobId: '',
-        positionName: 'Detay bulunamadı !!',
-        companyName: '',
-        durationDay: 0,
-        cityName: '',
-        description: ''
-      };
-      const detail = this.jobList.find((job) => {
-        return (this.$route.params.id === job.jobId);
-      });
-      this.jobDetail = detail ? detail : errorObj;
-    },
-    methods: {
-      apply() {
-        alert('Applied!!!');
-        this.$router.push('/job-list')
-
-      }
-    },
-  };
+  },
+};
 </script>
 <style lang="scss">
   @import 'JobDetail';

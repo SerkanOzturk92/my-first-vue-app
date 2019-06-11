@@ -1,0 +1,34 @@
+$font-color: #500305;
+$lg-margin: 3% 10% 3% 10%;
+$md-margin: 2% 8% 2% 8%;
+$sm-margin: 1% 5% 1% 5%;
+$border-style: solid 3px $font-color;
+
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: $font-color;
+  margin-top: 60px;
+}
+
+.lg-input {
+  border: solid 2px $font-color;
+  border-radius: 4px;
+  width: 40%;
+  height: 1.5rem;
+  padding: 3px;
+
+}
+.md-input {
+  border: solid 2px #500305;
+  border-radius: 4px;
+  height: 1.5rem;
+  width: 20%;
+}
+.sm-input {
+  border: solid 2px #500305;
+  border-radius: 4px;
+  width: 10%;
+}

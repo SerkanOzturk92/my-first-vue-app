@@ -1,0 +1,14 @@
+@import '../app';
+
+.job-list-body {
+  border: solid 3px $font-color;
+  .search-con {
+    margin: $md-margin;
+  }
+  .job-list-item{
+    cursor: pointer;
+  }
+}
+.my-border {
+  border: solid 3px $font-color;
+}

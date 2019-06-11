@@ -1,0 +1,8 @@
+@import '../app';
+
+.job-detail-body {
+  border: solid 3px $font-color;
+  .apply-button {
+    margin-bottom: 10px;
+  }
+}

@@ -28,30 +28,30 @@
 
 </template>
 <script>
-  import {jobListDummyData} from '../utils/JobListDummyData';
+import { jobListDummyData } from '../utils/JobListDummyData';
 
-  export default {
-    name: 'JobList',
-    data() {
-      return {
-        search: '',
-        jobList: jobListDummyData,
-      };
+export default {
+  name: 'JobList',
+  data() {
+    return {
+      search: '',
+      jobList: jobListDummyData,
+    };
+  },
+  methods: {
+    goDetail(id) {
+      this.$router.push(`/job-detail/${id}`);
     },
-    methods: {
-      goDetail(id) {
-        this.$router.push('/job-detail/' + id);
-      }
+  },
+  computed: {
+    filteredData() {
+      return this.jobList.filter((job) => {
+        const key = `${job.positionName} ${job.cityName}`;
+        return key.toLowerCase().includes(this.search.toLowerCase());
+      });
     },
-    computed: {
-      filteredData() {
-        return this.jobList.filter(job => {
-          const key = job.positionName + ' ' + job.cityName;
-          return key.toLowerCase().includes(this.search.toLowerCase())
-        })
-      }
-    }
-  };
+  },
+};
 
 </script>
 <style lang="scss">

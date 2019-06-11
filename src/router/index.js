@@ -14,7 +14,7 @@ export default new Router({
       component: JobList,
     },
     {
-      path: '/job-detail/:id',  //TODO: url ile id yollamaya bakılacak.
+      path: '/job-detail/:id',
       name: 'JobDetail',
       component: JobDetail,
     },

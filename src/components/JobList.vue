@@ -20,7 +20,7 @@
           <h4 class="text-left">{{item.positionName}}</h4>
           <p class="text-left">{{item.companyName}}</p>
           <p class="text-left text-uppercase">{{item.cityName}}</p>
-          <p class="float-right">{{item.durationDay}}</p>
+          <p class="float-right">{{item.postDate}}</p>
         </div>
       </div>
     </div>
@@ -47,7 +47,7 @@ export default {
     filteredData() {
       return this.jobList.filter((job) => {
         const key = `${job.positionName} ${job.cityName}`;
-        return key.toLowerCase().includes(this.search.toLowerCase());
+        return key.toLocaleLowerCase('tr-TR').includes(this.search.toLocaleLowerCase('tr-TR'));
       });
     },
   },

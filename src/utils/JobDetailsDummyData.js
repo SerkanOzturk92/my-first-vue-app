@@ -2,7 +2,7 @@ export const jobDetailsDummyData = [{
   jobId: '199A9ED66BFE4CF593DBDF5402F1702A0',
   positionName: 'Front end developer',
   companyName: 'Nibh ',
-  durationDay: 0,
+  postDate: '12.06.2019',
   cityName: 'İstanbul',
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ' +
     'ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris ' +
@@ -13,7 +13,7 @@ export const jobDetailsDummyData = [{
   jobId: '199A9ED66BFE4CF593DBDF5402F1702A1',
   positionName: 'Full Stack developer',
   companyName: 'Tortor dignissim convallis aenean et',
-  durationDay: 0,
+  postDate: '12.06.2019',
   cityName: 'izmir',
   description: 'arcu non sodales. Platea dictumst quisque sagittis purus sit amet. Molestie ac feugiat sed lectus ' +
     'vestibulum. Ac placerat vestibulum lectus mauris ultrices eros. Sit amet nulla facilisi morbi tempus iaculis ' +
@@ -22,14 +22,14 @@ export const jobDetailsDummyData = [{
   jobId: '199A9ED66BFE4CF593DBDF5402F1702A2',
   positionName: 'yazılım uzmanı',
   companyName: 'Ullamcorper ',
-  durationDay: 0,
+  postDate: '12.06.2019',
   cityName: 'Ankara',
   description: 'At risus viverra adipiscing at in tellus integer feugiat scelerisque. Ac feugiat sed lectu',
 }, {
   jobId: '199A9ED66BFE4CF593DBDF5402F1702A3',
   positionName: 'Test mühendisi',
   companyName: 'Testoğlu Lahmacun Pide Ve Kebap',
-  durationDay: 0,
+  postDate: '12.06.2019',
   cityName: 'İstanbul',
   description: 'tor condimentum lacinia. Lectus proin nibh nisl condimentum id venenatis. At tempor commodo ' +
     'ullamcorper a lacus vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes. Porttitor massa ' +
@@ -38,7 +38,7 @@ export const jobDetailsDummyData = [{
   jobId: '199A9ED66BFE4CF593DBDF5402F1702A4',
   positionName: '.Net Developer',
   companyName: 'Quis',
-  durationDay: 0,
+  postDate: '12.06.2019',
   cityName: 'Ankara',
   description: 'uat ac felis donec et odio. Porttitor massa id neque aliquam vestibulum morbi. Leo vel fringilla ' +
     'est ullamcorper eget nulla. Mattis aliquam faucibus purus in. Diam sit amet nisl suscipit adipiscing bibendum' +

@@ -2,7 +2,7 @@
   <div class="container job-detail-body">
     <div class="col h-50 d-inline-block">
       <br>
-      <p class="text-right">{{jobDetail.durationDay}}</p>
+      <p class="text-right">{{jobDetail.postDate}}</p>
       <h3 class="text-left">{{jobDetail.companyName}}</h3>
       <p class="text-left text-uppercase">{{jobDetail.cityName}}</p>
       <hr>
